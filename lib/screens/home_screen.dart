@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '/details_screen.dart';
+
+import '/screens/details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});
@@ -23,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 0, 0),
+
         title: Text(widget.title),
       ),
       body: Center(
@@ -30,7 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
+
               'Столько раз вы нажали кнопку:',
+
               style: TextStyle(fontSize: 18),
             ),
             Text(
@@ -38,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
               style: const TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
+
                 color: Color.fromARGB(255, 245, 85, 85),
+
               ),
             ),
             const SizedBox(height: 20),
@@ -53,7 +59,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 );
               },
+
               child: const Text('Перейти на экран '),
+
             ),
           ],
         ),
@@ -61,9 +69,13 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Увеличить счётчик',
+
         backgroundColor: const Color.fromARGB(255, 236, 95, 60),
+
         child: const Icon(Icons.add),
       ),
     );
   }
+
+
 }
