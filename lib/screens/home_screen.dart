@@ -49,7 +49,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
 
-            // 👉 Добавленный ElevatedButton
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
